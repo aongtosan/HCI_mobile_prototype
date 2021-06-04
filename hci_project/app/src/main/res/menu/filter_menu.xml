@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/date"
+        android:title="@string/date"
+        />
+    <item
+        android:id="@+id/location"
+        android:title="@string/location"
+        />
+    <item
+        android:id="@+id/status"
+        android:title="@string/status"
+        />
+    <item
+        android:id="@+id/problem_catelogue"
+        android:title="@string/Problem_Catelogue"
+        />
+    <item
+        android:id="@+id/default_value"
+        android:title="@string/default_value"
+        />
+</menu>

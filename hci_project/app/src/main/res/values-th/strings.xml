@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name" translatable="false">REG POST </string>
+    <string name="user_name" translatable="true">ชื่อผู้ใช้</string>
+    <string name="password" translatable="true">รหัสผ่าน</string>
+    <string name="remember_me" translatable="true">จดจำชื่อผู้ใช้?</string>
+    <string name="login" translatable="true">เข้าสู่ระบบ</string>
+    <string name="logout" translatable="true">ออกจากระบบ</string>
+    <string name="use_another_account" translatable="true">ใช้บัญชีอิ่นเพื่อเข้าสู่ระบบ</string>
+    <string name="warning" translatable="true">เกิดข้อผิดพลาด</string>
+    <string name="understand" translatable="true">ฉันเข้าใจแล้ว</string>
+    <string name="logout_warning" translatable="true">คุณแน่ใจแล้วใช่ไหมที่จะออกจากระบบ?</string>
+    <string name="error_detail" translatable="true">เกิดข้อผิดพลาด: กรุณาตรวจสอบชื่อผู้ใช้หรือรหัสผ่านอีกครั้ง</string>
+    <string name="error_detail_miss_id" translatable="true">เกิดข้อผิดพลาด: กรุณากรอกชื่อผู้ใช้</string>
+    <string name="error_detail_miss_pass" translatable="true">เกิดข้อผิดพลาด: กรุณากรอกรหัสผ่าน</string>
+    <string name="add_report" translatable="true">เขียนรายงานปัญหา</string>
+    <string name="show_own_report" translatable="true">ประวัติรายงานปัญหา</string>
+    <string name="profile_name" translatable="true">จักรพรรดิ์ ศรีคชา</string>
+    <string name="role_play">นักศึกษาวิทยาการคอมพิวเตอร์</string>
+    <string name="export_report" translatable="true">จัดพิมพ์รายงานปัญหา</string>
+    <string name="backward_warning"  translatable="true">ต้องการกลับไปยังหน้าหลักใช่หรือไม่?</string>
+    <string name="agreement" translatable="true">ใช่ ฉันต้องการ</string>
+    <string name="problem_place">ตำแหน่งที่เกิดปัญหา</string>
+    <string name="building">อาคาร</string>
+    <string name="room">ห้องบรรยาย</string>
+    <string-array name="building_list">
+        <item>บร-2</item>
+        <item>บร-3</item>
+        <item>บร-4</item>
+        <item>บร-5</item>
+    </string-array>
+    <string-array name="room_list">
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+        <item>106</item>
+        <item>107</item>
+        <item>108</item>
+        <item>109</item>
+        <item>110</item>
+        <item>111</item>
+        <item>112</item>
+        <item>113</item>
+        <item>114</item>
+        <item>116</item>
+        <item>117</item>
+        <item>118</item>
+        <item>119</item>
+        <item>120</item>
+        <item>121</item>
+        <item>122</item>
+        <item>201</item>
+        <item>202</item>
+        <item>203</item>
+        <item>204</item>
+        <item>205</item>
+        <item>206</item>
+        <item>207</item>
+        <item>208</item>
+        <item>209</item>
+        <item>210</item>
+        <item>211</item>
+        <item>212</item>
+        <item>213</item>
+        <item>214</item>
+        <item>301</item>
+        <item>302</item>
+        <item>303</item>
+        <item>304</item>
+        <item>305</item>
+        <item>306</item>
+        <item>307</item>
+        <item>308</item>
+        <item>309</item>
+        <item>310</item>
+        <item>311</item>
+        <item>312</item>
+        <item>313</item>
+        <item>314</item>
+        <item>401</item>
+        <item>402</item>
+        <item>403</item>
+        <item>404</item>
+        <item>405</item>
+        <item>406</item>
+        <item>407</item>
+        <item>408</item>
+        <item>409</item>
+        <item>410</item>
+        <item>411</item>
+        <item>412</item>
+        <item>413</item>
+        <item>414</item>
+        <item>501</item>
+        <item>502</item>
+        <item>503</item>
+        <item>504</item>
+        <item>505</item>
+        <item>506</item>
+        <item>507</item>
+        <item>508</item>
+        <item>509</item>
+        <item>510</item>
+        <item>511</item>
+        <item>512</item>
+        <item>513</item>
+        <item>514</item>
+
+    </string-array>
+    <string name="Problem_Catelogue">รูปแบบของปัญหาที่พบเจอ</string>
+    <string name="Problem_electro">ปัญหาที่เกิดจากอุปกรณ์อิเล็กทรอนิกซ์</string>
+    <string name="Problem_pump">ปัญหาที่เกิดจากประปาชำรุด</string>
+    <string name="Problem_building">ปัญหาที่เกิดจากตึกอาคารเสียหาย</string>
+    <string name="Problem_ect">ปัญหาอื่นๆ</string>
+    <string name="more_detail">โปรดระบุรายละเอียดเพิ่มเติม</string>
+    <string name="optional_detail">รายละเอียดเพิ่มเติม</string>
+    <string name="pic_detail">รูปภาพรายละเอียดปัญหา</string>
+    <string name="tel">6109680287</string>
+    <string name="add_pic">เพิ่มรูปภาพจากคลังภาพ</string>
+    <string name="take_pic">เพิ่มรูปภาพจากกล้องถ่ายรูป</string>
+    <string name="submit">แจ้งปัญหา</string>
+    <string name="broke_com">คอมพิวเตอร์ไม่สามารถใช้ได้</string>
+    <string name="broke_net">อินเตอร์เน็ตไม่สามารถใช้ได้</string>
+    <string name="broke_mic">ไมค์โครโฟนไม่สามารถใช้ได้</string>
+    <string name="broke_projector">โปรเจ็คเตอร์ไม่สามารถใช้ได้</string>
+    <string name="broke_tel">โทรศัพท์ไม่สามารถใช้ได้</string>
+    <string name="broke_light">หลอดไฟมีปัญหา</string>
+    <string name="plumb_dry">ท่อน้ำไม่ไหล</string>
+    <string name="plumb_leak">ท่อน้ำรั่วชำรุด</string>
+    <string name="broke_air">เครื่องปรับอากาศไม่สามารถใช้งานได้</string>
+    <string name="broken_door">ประตูชำรุด</string>
+    <string name="broken_glass">กระจกชำรุด</string>
+    <string name="broken_floor">พื้นห้องชำรุด</string>
+    <string name="broken_ceil">เพดานชำรุด</string>
+    <string name="take_photo">ถ่ายภาพปัญหา</string>
+    <string name="select_image">เลือกรูปจากคลังภาพ</string>
+    <string name="decline">ยังไม่พร้อม</string>
+    <string name="reporting_success">การทำรายการเสร็จสิ้น</string>
+    <string name="confirmation">คุณแน่ใจแล้วใช่ไหมที่จะให้แจ้งเตือนวิชานี้?</string>
+    <string name="heading_report" translatable="true">รายงานปัญหา</string>
+    <string name="report_status_onworking">กำลังดำเนินการ</string>
+    <string name="report_status_success">ดำเนินการเสร็จสิ้น</string>
+    <string name="filter">คัดกรองปัญหา</string>
+    <string name="date">ในช่วงเวลาที่มีการขอให้ลงทะเบียน</string>
+    <string name="location">สถานที่เกิดปัญหา</string>
+    <string name="status">ได้ทำรายการขอให้แจ้งเตือนรายวิชา</string>
+    <string name="problem_type">รูปแบบของปัญหา</string>
+    <string name="default_value">ค่าเริ่มต้น</string>
+    <string name="today">วันนี้</string>
+    <string name="other_day">วันก่อนหน้า</string>
+    <string name="building2">บร-2</string>
+    <string name="building3">บร-3</string>
+    <string name="building4">บร-4</string>
+    <string name="building5">บร-5</string>
+    <string name="no_inform">ไม่ปรากฎข้อมูล</string>
+    <string name="call_technician">ติดต่อเจ้าหน้าที่ผู้รับผิดชอบ</string>
+</resources>

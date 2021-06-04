@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/dark"
+    >
+    <ImageView
+        android:id="@+id/imageView"
+        tools:ignore="ContentDescription"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/warning" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/warning"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tufont_bold"
+        android:textSize="24dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center"
+        android:text="@string/error_detail" />
+
+    <Button
+        android:id="@+id/understanding"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:layout_weight="1"
+        android:background="@drawable/custom_button3"
+        android:text="@string/understand"
+        android:textColor="@color/dark" />
+
+</LinearLayout>

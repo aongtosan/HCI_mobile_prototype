@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/custom_button7"
+    android:id="@+id/problem_block"
+    android:layout_marginBottom="20dp"
+    >
+
+    <TextView
+        android:id="@+id/Problem_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/tufont_bold"
+        android:padding="10dp"
+        android:text="@string/reporting_success"
+        android:textColor="@color/dark_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ic_baseline_email_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/problem_report_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/dark_grey"
+                android:background="@drawable/custom_textview"
+                android:fontFamily="@font/tufont"
+                android:paddingStart="15dp"
+                android:text="@string/optional_detail" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/problem_report_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@drawable/custom_textview"
+                android:fontFamily="@font/tufont"
+                android:paddingStart="15dp"
+                android:drawablePadding="10dp"
+                android:text="@string/status"
+                android:drawableStart="@drawable/check"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

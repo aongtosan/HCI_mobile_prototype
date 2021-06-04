@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name" translatable="false">REG POST</string>
+    <string name="user_name"  translatable="true">User-name</string>
+    <string name="password"  translatable="true">Password</string>
+    <string name="remember_me"  translatable="true">Remember me?</string>
+    <string name="login"  translatable="true">LOGIN</string>
+    <string name="logout"  translatable="true"> LOGOUT</string>
+    <string name="use_another_account" translatable="true">Use Another Account</string>
+    <string name="warning" translatable="true">Warning</string>
+    <string name="understand"  translatable="true">OK, I understand.</string>
+    <string name="error_detail" translatable="true">Sorry,Username OR Password are incorrect.</string>
+    <string name="logout_warning" translatable="true">Are you sure to LOGOUT ?</string>
+    <string name="error_detail_miss_id" translatable="true">Error: Please Enter Username</string>
+    <string name="error_detail_miss_pass" translatable="true">Error: Please Enter Password</string>
+    <string name="profile_name" translatable="true">Jakkapat Srikacha</string>
+    <string name="add_report" translatable="true">Report Problem</string>
+    <string name="show_own_report" translatable="true">Report History</string>
+    <string name="role_play">Officer</string>
+    <string name="export_report" translatable="true">Report Generate</string>
+    <string name="backward_warning"  translatable="true">Do you want to go to dashboard? </string>
+    <string name="agreement" translatable="true">Yes,I do.</string>
+    <string name="problem_place">Location</string>
+    <string name="building">Building</string>
+    <string name="room">Room</string>
+    <string-array name="building_list">
+        <item>LC-2</item>
+        <item>LC-3</item>
+        <item>LC-4</item>
+        <item>LC-5</item>
+    </string-array>
+    <string-array name="room_list">
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+        <item>106</item>
+        <item>107</item>
+        <item>108</item>
+        <item>109</item>
+        <item>110</item>
+        <item>111</item>
+        <item>112</item>
+        <item>113</item>
+        <item>114</item>
+        <item>116</item>
+        <item>117</item>
+        <item>118</item>
+        <item>119</item>
+        <item>120</item>
+        <item>121</item>
+        <item>122</item>
+        <item>201</item>
+        <item>202</item>
+        <item>203</item>
+        <item>204</item>
+        <item>205</item>
+        <item>206</item>
+        <item>207</item>
+        <item>208</item>
+        <item>209</item>
+        <item>210</item>
+        <item>211</item>
+        <item>212</item>
+        <item>213</item>
+        <item>214</item>
+        <item>301</item>
+        <item>302</item>
+        <item>303</item>
+        <item>304</item>
+        <item>305</item>
+        <item>306</item>
+        <item>307</item>
+        <item>308</item>
+        <item>309</item>
+        <item>310</item>
+        <item>311</item>
+        <item>312</item>
+        <item>313</item>
+        <item>314</item>
+        <item>401</item>
+        <item>402</item>
+        <item>403</item>
+        <item>404</item>
+        <item>405</item>
+        <item>406</item>
+        <item>407</item>
+        <item>408</item>
+        <item>409</item>
+        <item>410</item>
+        <item>411</item>
+        <item>412</item>
+        <item>413</item>
+        <item>414</item>
+        <item>501</item>
+        <item>502</item>
+        <item>503</item>
+        <item>504</item>
+        <item>505</item>
+        <item>506</item>
+        <item>507</item>
+        <item>508</item>
+        <item>509</item>
+        <item>510</item>
+        <item>511</item>
+        <item>512</item>
+        <item>513</item>
+        <item>514</item>
+
+    </string-array>
+    <string name="Problem_Catelogue">Problem Catelogue</string>
+    <string name="Problem_electro">Electronic Problem</string>
+    <string name="Problem_pump">Plumbing Problem</string>
+    <string name="Problem_building">Buliding Problem</string>
+    <string name="Problem_ect">Optional Problem</string>
+    <string name="more_detail">Please tell us more detail.</string>
+    <string name="optional_detail">Optional detail</string>
+    <string name="pic_detail">Picture detail</string>
+    <string name="tel">090-371-3263</string>
+    <string name="add_pic">Add image form gallery</string>
+    <string name="take_pic">Add image form camera</string>
+    <string name="submit">Submit Report</string>
+    <string name="broke_com">Computer disable</string>
+    <string name="broke_net">Internet disable</string>
+    <string name="broke_mic">Microphone disable</string>
+    <string name="broke_projector">Projector disable</string>
+    <string name="broke_air">Aircondition disable</string>
+    <string name="broke_tel">Telephone disable</string>
+    <string name="broke_light">Light bulb disable</string>
+    <string name="plumb_dry">Water is not running.</string>
+    <string name="plumb_leak">Broken pipe.</string>
+    <string name="broken_door">Broken door</string>
+    <string name="broken_glass">Broken glass</string>
+    <string name="broken_floor">Broken floor</string>
+    <string name="broken_ceil">Broken ceil</string>
+    <string name="take_photo">Take photo</string>
+    <string name="select_image">Select image</string>
+    <string name="decline">No,I am not ready</string>
+    <string name="reporting_success">Reporting success</string>
+    <string name="confirmation">Are you sure to report this problem?</string>
+    <string name="heading_report" translatable="true">Report</string>
+    <string name="report_status_onworking">On working</string>
+    <string name="report_status_success">Success</string>
+    <string name="filter">filter</string>
+    <string name="date">Sort by date</string>
+    <string name="location">Sort by location</string>
+    <string name="status">Sort by report status</string>
+    <string name="problem_type">Sort by Problem catalogue</string>
+    <string name="default_value">default</string>
+    <string name="today">Today</string>
+    <string name="other_day">Other day</string>
+    <string name="building2">LC-2</string>
+    <string name="building3">LC-3</string>
+    <string name="building4">LC-4</string>
+    <string name="building5">LC-5</string>
+    <string name="no_inform">No information</string>
+    <string name="call_technician">Call technician</string>
+</resources>

@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#f2f3f4"
+    tools:context=".report_problem">
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_button4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/ic_backspace"
+                android:onClick="backward"
+                />
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/add_report"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/tufont_bold"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/problem_place"
+                    android:fontFamily="@font/tufont_bold"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/ic_baseline_home_work_24"
+                    android:drawablePadding="15dp"
+                    android:layout_gravity="center_vertical"
+
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="5dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/building"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/building"
+                        android:textSize="16dp"/>
+
+                    <Spinner
+                        android:id="@+id/building_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/room_of_building"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/room"
+                        android:gravity="center_vertical"
+                        android:textSize="16dp"
+                        />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/room_of_building_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/tufont"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:paddingLeft="20dp"
+                        android:background="@drawable/custom_input"
+                        android:textSize="16dp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/problem_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/ic_baseline_category_24"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/tufont_bold"
+                    android:text="@string/Problem_Catelogue"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="36dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="34dp"
+                        android:fontFamily="@font/tufont"
+                        android:text="@string/Problem_electro"
+                        android:id="@+id/Problem_electro"
+                        android:textSize="16dp"
+                        android:button="@drawable/check_problem_box"
+                        >
+
+                    </CheckBox>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                       android:layout_marginLeft="64dp"
+                        android:visibility="gone"
+                        android:id="@+id/Problem_electro_detail"
+                        >
+
+                        <CheckBox
+                            android:id="@+id/broke_mic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/broke_mic"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/tufont"
+                            android:button="@drawable/check_mic_disable"
+                            android:padding="5dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/broke_com"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:text="@string/broke_com"
+                            android:fontFamily="@font/tufont"
+                            android:button="@drawable/check_computer_disable"
+                            android:padding="5dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/broke_projector"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:text="@string/broke_projector"
+                            android:button="@drawable/check_projector_disable"
+                            android:padding="5dp"
+                            android:fontFamily="@font/tufont"/>
+                        <CheckBox
+                            android:id="@+id/broke_internet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:text="@string/broke_net"
+                            android:fontFamily="@font/tufont"
+                            android:button="@drawable/check_internet_diable"
+                            android:padding="5dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/broke_light"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:text="@string/broke_light"
+                            android:fontFamily="@font/tufont"
+                            android:button="@drawable/check_light_diable"
+                            android:padding="5dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/broke_air"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:text="@string/broke_air"
+                            android:fontFamily="@font/tufont"
+                            android:button="@drawable/check_air_disable"
+                            android:padding="5dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/broke_telecom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:text="@string/broke_tel"
+                            android:button="@drawable/check_phone_diable"
+                            android:padding="5dp"
+                            android:fontFamily="@font/tufont"/>
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="34dp"
+                        android:fontFamily="@font/tufont"
+                        android:text="@string/Problem_pump"
+                        android:id="@+id/Problem_plumb"
+                        android:textSize="16dp"
+                        android:button="@drawable/check_problem_box"
+                        >
+
+                    </CheckBox>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="30dp"
+                        android:visibility="gone"
+                        android:id="@+id/Problem_plumb_detail"
+
+                        >
+
+                      <CheckBox
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_marginLeft="24dp"
+                          android:layout_marginStart="34dp"
+                          android:fontFamily="@font/tufont"
+                          android:text="@string/plumb_dry"
+                          android:id="@+id/broke_pipe_dry"
+                          android:textSize="14dp"
+                          android:padding="5dp"
+                          android:button="@drawable/check_pipe_disable"
+
+                          ></CheckBox>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="34dp"
+                            android:fontFamily="@font/tufont"
+                            android:text="@string/plumb_leak"
+                            android:id="@+id/broke_pipe_leak"
+                            android:textSize="14dp"
+                            android:padding="5dp"
+                            android:button="@drawable/check_pipe_leak"
+
+                            ></CheckBox>
+                    </LinearLayout>
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="34dp"
+                        android:fontFamily="@font/tufont"
+                        android:text="@string/Problem_building"
+                        android:id="@+id/Problem_build"
+                        android:textSize="16dp"
+                        android:button="@drawable/check_problem_box"
+                        >
+                    </CheckBox>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="30dp"
+                        android:visibility="gone"
+                        android:id="@+id/Problem_build_detail"
+                        >
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="34dp"
+                            android:fontFamily="@font/tufont"
+                            android:text="@string/broken_door"
+                            android:id="@+id/broke_door"
+                            android:textSize="14dp"
+                            android:padding="5dp"
+                            android:button="@drawable/check_broken_door"
+
+                            ></CheckBox>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="34dp"
+                            android:fontFamily="@font/tufont"
+                            android:text="@string/broken_glass"
+                            android:id="@+id/broke_glass"
+                            android:textSize="14dp"
+                            android:padding="5dp"
+                            android:button="@drawable/check_broken_glass"
+
+                            ></CheckBox>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="34dp"
+                            android:fontFamily="@font/tufont"
+                            android:text="@string/broken_ceil"
+                            android:id="@+id/broke_ceil"
+                            android:textSize="14dp"
+                            android:padding="5dp"
+                            android:button="@drawable/check_broken_ceil"
+
+                            ></CheckBox>
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="34dp"
+                            android:fontFamily="@font/tufont"
+                            android:text="@string/broken_floor"
+                            android:id="@+id/broke_foor"
+                            android:textSize="14dp"
+                            android:padding="5dp"
+                            android:button="@drawable/check_broken_floor"
+
+                            ></CheckBox>
+
+                    </LinearLayout>
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="34dp"
+                        android:fontFamily="@font/tufont"
+                        android:text="@string/Problem_ect"
+                        android:id="@+id/Problem_ect"
+                        android:textSize="16dp"
+                        android:button="@drawable/check_problem_box"
+                        >
+
+                    </CheckBox>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="64dp"
+                        android:visibility="gone"
+                        android:id="@+id/Problem_ect_detail"
+                        >
+                        <EditText
+                            android:id="@+id/ect_inform"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="36dp"
+                            android:hint="@string/more_detail"
+                            android:fontFamily="@font/tufont"
+                            android:background="@drawable/custom_input"
+                            android:layout_marginLeft="12dp"
+                            android:textSize="14dp"
+                            >
+                        </EditText>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/more_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/more_detail"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/tufont_bold"
+                    android:text="@string/optional_detail"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/opt_inform"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="36dp"
+                    android:hint="@string/more_detail"
+                    android:fontFamily="@font/tufont"
+                    android:background="@drawable/custom_input"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="16dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginBottom="15dp"
+                    />
+                <TextView
+                    android:id="@+id/pic_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/ic_baseline_add_a_photo"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/tufont_bold"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/pic_detail" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="34dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/take_picture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/take_photo"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/tufont"
+                        android:button="@drawable/check_problem_box"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="16dp"
+                        android:visibility="gone"
+                        android:id="@+id/show_camera"
+                        >
+
+                        <ImageView
+                            android:id="@+id/temp_pic"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            android:paddingBottom="10dp"
+                            />
+
+                        <Button
+                            android:id="@+id/cal_camera"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="cal_camera"
+                            android:text="@string/take_photo"
+                            android:background="@drawable/take_photo_button"
+                            android:drawableStart="@drawable/ic_baseline_photo_camera_24"
+                            android:padding="10dp"
+                            />
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/select_pic_from_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/check_problem_box"
+                        android:fontFamily="@font/tufont"
+                        android:text="@string/add_pic"
+                        android:textSize="14dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:id="@+id/show_gallery"
+                        >
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:visibility="gone"
+                            android:id="@+id/wrap_pic_list"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:id="@+id/pic_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+
+                        <Button
+                            android:id="@+id/upload_picture"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="upload_picture"
+                            android:text="@string/select_image"
+                            android:drawableStart="@drawable/ic_menu_gallery"
+                            android:padding="10dp"
+                            android:background="@drawable/take_photo_button"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_button3"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:fontFamily="@font/tufont_bold"
+                    android:text="@string/submit"
+                    android:onClick="submit_report"
+                    android:textColor="@color/dark"
+                    android:drawableStart="@drawable/send"
+                    android:drawablePadding="15dp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>
